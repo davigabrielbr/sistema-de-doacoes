@@ -1,20 +1,14 @@
 package br.com.davi.doacoes.model;
 
 public class Familia extends Pessoa {
-    private String nomesMembros;
+    private String nomeResponsavel;
+    private String cpfResponsavel;
     private int quantidadeMembros;
     private String necessidades;
+    private Endereco endereco;
 
     public void receberDoacao() {
 
-    }
-
-    public String getNomesMembros() {
-        return nomesMembros;
-    }
-
-    public void setNomesMembros(String nomesMembros) {
-        this.nomesMembros = nomesMembros;
     }
 
     public int getQuantidadeMembros() {
@@ -31,5 +25,21 @@ public class Familia extends Pessoa {
 
     public void setNecessidades(String necessidades) {
         this.necessidades = necessidades;
+    }
+
+    public String getNomeResponsavel() {
+        return nomeResponsavel;
+    }
+
+    public void setNomeResponsavel(String nomeResponsavel) {
+        this.nomeResponsavel = nomeResponsavel;
+    }
+
+    public String getCpfResponsavel() {
+        return cpfResponsavel;
+    }
+
+    public void setCpfResponsavel(String cpfResponsavel) {
+        this.cpfResponsavel = cpfResponsavel;
     }
 }
