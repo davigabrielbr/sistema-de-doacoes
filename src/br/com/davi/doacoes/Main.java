@@ -94,6 +94,9 @@ public class Main {
                     System.out.print("Cidade: ");
                     endereco1.setCidade(scanner.nextLine());
 
+                    System.out.print("Estado: ");
+                    endereco1.setEstado(scanner.nextLine());
+
                     System.out.print("Rua: ");
                     endereco1.setRua(scanner.nextLine());
 
@@ -118,7 +121,6 @@ public class Main {
                     }
 
                     doacao = new Doacao();
-                    scanner.nextLine();
 
                     System.out.print("Categoria da doação (Ex: Alimento, Roupa, Dinheiro): ");
                     doacao.setCategoria(scanner.nextLine());
@@ -155,6 +157,18 @@ public class Main {
                     }
                     break;
                 case 5:
+                    if (familia == null) {
+                        System.out.println("Nenhuma família cadastrada ainda.");
+                    } else {
+                        System.out.println("--- Família Cadastrada ---");
+                        System.out.println("Responsável: " + familia.getNomeResponsavel());
+                        System.out.println("Quantidade de membros: " + familia.getQuantidadeMembros());
+                        System.out.println("--- Endereço ---");
+                        System.out.println("Rua: " + familia.getEndereco().getRua());
+                        System.out.println("Número: " + familia.getEndereco().getNumero());
+                        System.out.println("Cidade: " + familia.getEndereco().getCidade());
+                        System.out.println("Estado: " + familia.getEndereco().getEstado());
+                    }
                     break;
                 case 0:
                     System.out.println("Saindo...");
