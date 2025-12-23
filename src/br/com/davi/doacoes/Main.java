@@ -18,6 +18,7 @@ public class Main {
         Doacao doacao = null;
 
         do {
+            System.out.println("============================");
             System.out.println("\n=== Sistema de Doações ===");
             System.out.println("1 - Cadastrar doador");
             System.out.println("2 - Cadastrar família");
